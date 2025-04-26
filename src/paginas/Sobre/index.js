@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import "../../index.css";
 
 class Sobre extends Component{
-    constructor(props){
-      super(props);
-    }
+   // constructor(props){
+    //  super(props);
+   // }
 
     render(){
       return(

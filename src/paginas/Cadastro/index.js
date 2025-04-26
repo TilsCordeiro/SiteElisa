@@ -56,12 +56,13 @@ class Cadastro extends Component {
     try {
       await firebase.auth().createUserWithEmailAndPassword(email, senha);
       await firebase.firestore().collection("usuario").add({
-      nome: this.state.nome,
-      sobrenome: this.state.sobrenome,
-      dataDeNascimento: this.state.dataDeNascimento,
-      email: this.state.email,
-      senha: this.state.senha
-    });
+        nome,
+        sobrenome,
+        dataDeNascimento,
+        email,
+        senha
+      });
+      
     alert("Usuário cadastrado com sucesso!");
     this.buscarUsuarios();
   } catch (erro) {
