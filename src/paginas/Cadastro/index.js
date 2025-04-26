@@ -110,7 +110,7 @@ class Cadastro extends Component {
         <button onClick={this.gravar}>Gravar</button>
 
         <hr />
-        <h2>Usuários cadastrados:</h2>
+        <h2>Usuários cadastrados</h2>
         <ul>
           {this.state.usuarios.map((user) => (
             <li key={user.id}>
