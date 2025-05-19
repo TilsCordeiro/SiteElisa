@@ -1,0 +1,177 @@
+.home-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: #2c3e50;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.intro h1 {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  color: #34495e;
+  letter-spacing: 1px;
+}
+
+.intro p {
+  font-size: 1.25rem;
+  color: #7f8c8d;
+  font-style: italic;
+  margin-top: 0;
+}
+
+.estatisticas {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 3rem 0;
+  flex-wrap: wrap;
+}
+
+.quadro {
+  background: #ecf0f1;
+  padding: 1.5rem 2rem;
+  border-radius: 15px;
+  width: 220px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #2c3e50;
+  box-shadow: 0 4px 12px rgba(44, 62, 80, 0.1);
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+
+.quadro:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(44, 62, 80, 0.2);
+}
+
+.missao, .atuacao, .sobre {
+  margin: 3rem 0;
+  text-align: left;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #34495e;
+}
+
+.missao h2, .atuacao h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.6rem;
+  border-bottom: 3px solid #2980b9;
+  display: inline-block;
+  padding-bottom: 4px;
+  font-weight: 700;
+}
+
+.missao p, .atuacao p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.atuacao ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.atuacao li {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  position: relative;
+  padding-left: 1.3rem;
+  color: #555;
+}
+
+.atuacao li strong {
+  color: #2980b9;
+}
+
+.atuacao li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #2980b9;
+  font-weight: bold;
+}
+
+.sobre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.sobre img {
+  max-width: 180px;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 15px rgba(41, 128, 185, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.sobre img:hover {
+  transform: scale(1.05);
+}
+
+.sobre p {
+  font-size: 1.15rem;
+  color: #555;
+  max-width: 600px;
+}
+
+.links {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem; /* espaçamento entre botões */
+}
+
+
+.links button {
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 0.7rem 2.5rem; /* mais padding horizontal */
+  margin: 0.4rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(41, 128, 185, 0.4);
+  white-space: nowrap; /* evita quebra de linha dentro do botão */
+  width: auto; /* deixa o botão se ajustar ao texto */
+  min-width: 130px; /* largura mínima para ficar consistente */
+  text-overflow: ellipsis; /* para texto muito longo, mostra "..." */
+  overflow: hidden; /* para garantir que não vaze */
+}
+
+.links button:hover {
+  background-color: #1c5980;
+  box-shadow: 0 6px 16px rgba(28, 89, 128, 0.6);
+}
+
+@media (max-width: 768px) {
+  .estatisticas {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .quadro {
+    width: 100%;
+  }
+  .missao, .atuacao {
+    padding: 0 1rem;
+  }
+  .sobre p {
+    padding: 0 1rem;
+  }
+}

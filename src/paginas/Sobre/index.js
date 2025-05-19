@@ -1,55 +1,33 @@
-import React, {Component} from 'react';
-import { Link } from "react-router-dom";
-import "../../index.css";
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import './sobre.css';
 
-class Sobre extends Component{
-   // constructor(props){
-    //  super(props);
-   // }
+class Sobre extends Component {
+  render() {
+    return (
+      <div className="sobre-container">
+        <h1>Sobre a Advogada</h1>
 
-    render(){
-      return(
-        <div>
-            <h1>Sobre o nosso sistema</h1>
-            <h2>Linguagem</h2>
-            <h4>JavaScript</h4>
-            <h2>Bibliotecas utilizadas</h2>
-            <h3>react</h3>
-            <h4>Biblioteca principal para criar interfaces de usuário com componentes.</h4>
-            <h4>Versão: 18.2.0</h4>
-            <h3>react-router-dom</h3>
-            <h4>Biblioteca para gerenciamento de rotas e navegação entre páginas no React.</h4>
-            <h4>Versão: 7.5.0</h4>
-            <Link to="/home"><button>Página Inicial</button></Link>
-        </div>
-      )
-    }
+        <img src="/Fotos/Elisa1.jpeg" alt="Foto da Dra. Elisa Tils" className="foto-elisa" />
+
+        <p>
+          Dra. Elisa Tils é advogada especializada em Direito Civil, com sólida experiência na condução de casos relacionados a família, contratos, responsabilidade civil e direito do consumidor.
+        </p>
+
+        <p>
+          Reconhecida por sua abordagem empática e estratégica, Dra. Elisa atua com seriedade e dedicação, buscando sempre as melhores soluções jurídicas para seus clientes.
+        </p>
+
+        <p>
+          Sua missão é proporcionar segurança jurídica e confiança por meio de um atendimento personalizado, ético e transparente.
+        </p>
+
+        <Link to="/home">
+          <button>Voltar para Página Inicial</button>
+        </Link>
+      </div>
+    );
+  }
 }
 
 export default Sobre;
-
-
-
-//import React from 'react';
-//import { useNavigate } from 'react-router-dom';
-
-//export default function Sobre() {
-  //const navigate = useNavigate();
-  //return (
-  //<div>
-    //<h1>Sobre o nosso sistema</h1>
-    //<h2>Linguagem</h2>
-    //<h4>JavaScript</h4>
-    //<h2>Bibliotecas utilizadas</h2>
-    //<h3>react</h3>
-    //<h4>Biblioteca principal para criar interfaces de usuário com componentes.</h4>
-    //<h4>Versão: 18.2.0</h4>
-    //<h3>react-router-dom</h3>
-    //<h4>Biblioteca para gerenciamento de rotas e navegação entre páginas no React.</h4>
-    //<h4>Versão: 7.5.0</h4>
-    //<button onClick={() => navigate('/home')}>Ir para Home</button>
-  //</div>
-  //);
-//}
-
-
