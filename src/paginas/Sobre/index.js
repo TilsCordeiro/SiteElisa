@@ -11,7 +11,7 @@ class Sobre extends Component {
         <img src="/Fotos/Elisa1.jpeg" alt="Foto da Dra. Elisa Tils" className="foto-elisa" />
 
         <p>
-          Dra. Elisa Tils é advogada especializada em Direito Civil, com sólida experiência na condução de casos relacionados a família, contratos, responsabilidade civil e direito do consumidor.
+          Dra. Elisa Tils Galli é advogada especializada em Direito Civil, com sólida experiência na condução de casos relacionados a família, contratos, responsabilidade civil e direito do consumidor.
         </p>
 
         <p>
