@@ -48,7 +48,7 @@ const Home = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <h1>Elisa Tils - Advogada Criminalista</h1>
+        <h1>Elisa Tils - Advogada Direito Civil</h1>
         <p>Defendendo direitos com ética, dedicação e estratégia</p>
       </motion.div>
 
